@@ -5,7 +5,6 @@ services:
         FROM python:3.12-slim
         RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg
         RUN pip install --no-cache-dir github-readme-terminal
-    user: "1000:1000"
     working_dir: /work
     environment:
       HOME: /tmp
